@@ -3,7 +3,7 @@ import './topbar.css'
 
 import { Person, Search, Chat, Notifications } from '@mui/icons-material';
 
-export const Topbar = () => {
+export default function TopBar(){
     return (
         <div className='topbarContainer'>
             <div className='topbarLeft'>
