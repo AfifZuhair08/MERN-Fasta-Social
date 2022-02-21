@@ -1,7 +1,7 @@
 .sidebar {
     flex: 3;
     height: calc(100vh - 50px);
-    background-color: aqua;
+    /* background-color: aqua; */
     overflow-y: scroll;
 }
 
@@ -19,7 +19,7 @@
 
 .sidebarWrapper {
     padding: 20px;
-    background-color: bisque;
+    background-color: white;
 }
 
 .sidebarList {
