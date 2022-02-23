@@ -10,7 +10,7 @@ export default function Profile() {
     return (
         <>
             <TopBar />
-            <div className="profileContainer">
+            <div className="profile">
                 <SideBar />
                 <div className="profileRight">
                     <div className="profileRightTop">

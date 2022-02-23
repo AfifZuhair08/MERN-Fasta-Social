@@ -52,7 +52,7 @@ export default function RightBar({ profile }) {
           <span className="rightbarInfoKey">Relationship: </span>
           <span className="rightbarInfoValue">Married</span>
         </div>
-      <h4 className="rightbarTitle">User Friends</h4>
+        <h4 className="rightbarTitle">User Friends</h4>
         <div className="rightbarFollowings">
           <div className="rightbarFollowing">
             <img src="assets/person/alex.jpg" alt="" className="rightbarFollowingImg" />
@@ -82,7 +82,7 @@ export default function RightBar({ profile }) {
   return (
     <div className='rightbar'>
       <div className="rightbarWrapper">
-        <ProfileRightBar />
+        {profile ? <ProfileRightBar /> : <HomeRightBar />}
       </div>
     </div>
   )
