@@ -5,6 +5,7 @@ import { MoreVert, Favorite, ThumbUp } from '@mui/icons-material';
 
 export default function Post() {
 
+    const PF = process.env.REACT_APP_PUBLIC_FOLDER;
     const [like, setLike] = useState(1);
     const [isLiked, setIsLiked] = useState(false);
 
@@ -18,7 +19,7 @@ export default function Post() {
             <div className="postWrapper">
                 <div className="postTop">
                     <div className="postTopLeft">
-                        <img className="postProfileImg" src="/assets/person/alex.jpg" alt="" />
+                        <img className="postProfileImg" src={`${PF}person/alex.jpg`} alt="" />
                         <span className="postUsername">Afif Zuhair</span>
                         <span className="postDate">5 minutes ago</span>
                     </div>
@@ -28,7 +29,7 @@ export default function Post() {
                 </div>
                 <div className="postCenter">
                     <span className="postText">Hey, it's my first post!</span>
-                    <img className="postImg" src="assets/post/1.jpg" alt="" />
+                    <img className="postImg" src={`${PF}post/1.jpg`} alt="" />
                 </div>
                 <div className="postBottom">
                     <div className="postBottomLeft">

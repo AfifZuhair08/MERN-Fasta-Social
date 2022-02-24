@@ -1,13 +1,16 @@
 import React from 'react';
 import './topbar.css'
 
+import { Link } from 'react-router-dom';
 import { Person, Search, Chat, Notifications } from '@mui/icons-material';
 
-export default function TopBar(){
+export default function TopBar() {
     return (
         <div className='topbarContainer'>
             <div className='topbarLeft'>
-                <span className="logo">Fasta Social</span>
+                <Link to="/" style={{ textDecoration: "none" }}>
+                    <span className="logo">Fasta Social</span>
+                </Link>
             </div>
             <div className='topbarCenter'>
                 <div className="searchbar">
