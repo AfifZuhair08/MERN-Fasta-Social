@@ -1,9 +1,10 @@
 import React from 'react';
 import "./rightbar.css";
 
-export default function RightBar({ profile }) {
+export default function RightBar({ user }) {
   
   const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+  // const { city, from, relationship } = user;
 
   const friendCardList = () => (
     <li className="rightbarFriend">
@@ -84,7 +85,7 @@ export default function RightBar({ profile }) {
   return (
     <div className='rightbar'>
       <div className="rightbarWrapper">
-        {profile ? <ProfileRightBar /> : <HomeRightBar />}
+        {user ? <ProfileRightBar /> : <HomeRightBar />}
       </div>
     </div>
   )
